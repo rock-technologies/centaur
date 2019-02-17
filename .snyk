@@ -1,0 +1,29 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:braces:20180219':
+    - forever > forever-monitor > chokidar > anymatch > micromatch > braces:
+        reason: Low risk.  Only used for 'forever' package.
+        expires: '2019-03-11T19:42:03.772Z'
+  'npm:timespan:20170907':
+    - forever > timespan:
+        reason: Low risk.  Only used for 'forever' package.
+        expires: '2019-03-11T19:42:03.772Z'
+  'npm:utile:20180614':
+    - forever > utile:
+        reason: Low risk.  Only used for 'forever' package.
+        expires: '2019-03-11T19:42:03.772Z'
+    - forever > forever-monitor > utile:
+        reason: Low risk.  Only used for 'forever' package.
+        expires: '2019-03-11T19:42:03.772Z'
+    - forever > flatiron > broadway > utile:
+        reason: Low risk.  Only used for 'forever' package.
+        expires: '2019-03-11T19:42:03.772Z'
+    - forever > forever-monitor > broadway > utile:
+        reason: Low risk.  Only used for 'forever' package.
+        expires: '2019-03-11T19:42:03.772Z'
+    - forever > flatiron > prompt > utile:
+        reason: Low risk.  Only used for 'forever' package.
+        expires: '2019-03-11T19:42:03.772Z'
+patch: {}

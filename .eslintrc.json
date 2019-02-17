@@ -1,0 +1,22 @@
+{
+   "extends": "airbnb",
+   "parserOptions": {
+   "ecmaVersion": 2018,
+   "sourceType": "module",
+   "env":{
+      "node": true
+   },
+   "plugins": ["graphql"]
+},
+   "rules": {
+      "semi": 2,
+      "arrow-parens": ["error", "as-needed"],
+      "function-paren-newline": ["error", "consistent"],
+      "object-curly-newline": ["error", { "consistent": true }],
+      "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+      "linebreak-style": 0,
+      "global-require": 0,
+      "comma-dangle": 0,
+      "indent": ["error", 3]
+   }
+}
